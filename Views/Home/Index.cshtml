@@ -17,6 +17,11 @@
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+    <!-- SyntaxHighlighter -->
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeMidnight.css" rel="stylesheet" />
+
     <!-- Material Kit CSS -->
     <link href="/assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
     <!-- Kit Overrides/Custom CSS-->
@@ -168,7 +173,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Section Three : Coding Challenges -->
+            <!-- Section Three : Coding Challenges -->  
             <div class="row">
                 <div class="col-md-12">
                     <div class="section text-left">
@@ -348,7 +353,7 @@
             <div class="copyright float-right">
                 &copy;
                 <script>
-                  document.write(new Date().getFullYear())
+                    document.write(new Date().getFullYear())
                 </script> - Derrick Gordon
             </div>
         </div>
@@ -903,6 +908,14 @@
 
         <!-- coding challenges script-->
         <script type="text/javascript" src="~/assets/js/codingchallenges.js"></script>
+
+        <!-- SyntaxHighlighter -->
+        <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+        <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+        <script type="text/javascript">
+            SyntaxHighlighter.all();
+        </script>
+
     </footer>
 </body>
 
