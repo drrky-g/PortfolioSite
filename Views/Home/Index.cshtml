@@ -1,0 +1,909 @@
+﻿@using PortfolioSite.Helpers;
+@model EmailModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Derrick Gordon - Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- Material Kit CSS -->
+    <link href="/assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+    <!-- Kit Overrides/Custom CSS-->
+    <link href="/assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+    <!-- Nav -->
+    <nav class="navbar navbar-color-on-scroll navbar-transparent fixed-top navbar-expand-lg" color-on-scroll="100">
+        <div class="container">
+            <div class="navbar-translate">
+                <!-- Nav Branding -->
+                <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
+                    Derrick Gordon
+                </a>
+                <!-- Responsive Toggle -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse">
+                <!-- Nav List -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#top" class="nav-link">
+                            <i class="material-icons">home</i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutme" class="nav-link">
+                            <i class="material-icons">perm_identity</i> About Me
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">
+                            <i class="material-icons">view_carousel</i> Projects
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#challenges" class="nav-link">
+                            <i class="material-icons">code</i> Coding Challenges
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <i class="material-icons">mail</i> Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <div class="page-header header-filter" data-parallax="true" style="background-image: url('/assets/img/bg3.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto">
+                    <div class="brand text-center">
+                        <!-- Title -->
+                        <h1>Derrick Gordon</h1>
+                        <!-- Subtitle -->
+                        <h4 class="text-center">.NET Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Body -->
+    <div class="main main-raised">
+        <div class="container">
+            <!-- Section One : About Me -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 id="aboutme" class="title">About Me</h3>
+                            </div>
+                        </div>
+                        <!-- About Me Content-->
+                        <div class="row">
+                            <span class="col-md-1"></span>
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <span class="col-md-4"></span>
+                                    <div class="col-md-4">
+                                        <img id="aboutMeAvatar" src="/assets/img/faces/christian.jpg" class="img-raised rounded-circle img-fluid" />
+                                    </div>
+                                    <span class="col-md-4"></span>
+                                </div>
+                                <div class="row">
+                                    <span class="col-md-1"></span>
+                                    <div class="col-md-10 text-left">
+                                        <p>
+                                            Hey, my name's Derrick. I live in Charlotte, North Carolina and am currently building web applications using the ASP.NET framework.
+                                            My first bit of exposure to web development was in a high school computer class. In there, we learned how to use basic HTML and CSS.
+                                            I like to think that I've learned a lot since then! I started dipping my toes into web development more after high school and into college.
+                                            Luckily, my college tuition included a Lynda.com membership <em class="text-muted">(insane value)</em>. After two years of Lynda videos, I felt
+                                            I needed to do something to push me to produce more. So once I learned about the bootcamp I am attending, I applied to test fast track my education.
+                                            In the bootcamp, I felt like I'd finally found a 'calling' and strive to hone my craft every day.
+                                        </p>
+                                    </div>
+                                    <span class="col-md-1"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Two : Projects -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section text-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 id="projects" class="title">Projects</h3>
+                            </div>
+                        </div>
+                        <!-- Project Content -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Project One-->
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h3>Building My Own Blog</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                (Project image thumbnail TBD)
+                                            </div>
+                                            <div class="col-md-5">
+                                                <p>
+                                                    This is the first .NET MVC Web Application I built. It's a personal blog where I write about coding stuff.
+                                                    If I log into the site, I can write posts and moderate comments if anyone feels compelled to leave any.
+                                                    Visitors are allowed to leave comments if they choose to register.
+                                                </p>
+                                                <a href="https://derricks-blog.azurewebsites.net" class="float-right btn btn-default btn-lg">Visit the Blog</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Three : Coding Challenges -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section text-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 id="challenges" class="title">Coding Challenges</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <em>Clicking on a card will show a modal associated with the challenge.</em>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Challenge Cards-->
+                        <div class="row">
+                            <!-- Math-->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#mathModal">
+                                    <div class="card-header">
+                                        <h4>Basic Math</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            Enter some numbers. The script finds the highest value, lowest value, sum of all values, product of all values, and mean of all values.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Factorial-->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#factModal">
+                                    <div class="card-header">
+                                        <h4>Factorial</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            Enter some numbers. The script finds the highest value, lowest value, sum of all values, product of all values, and mean of the values.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Palindrome-->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#palModal">
+                                    <div class="card-header">
+                                        <h4>Palindrome</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            Enter a word. If the word is a palindrome (meaning it reads the same backwards), the script will check and let you know.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Fizz Buzz-->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#fbModal">
+                                    <div class="card-header">
+                                        <h4>Fizz Buzz</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            Enter two numbers. Any number 1-100 that is divisble by your numbers will be replaced with an appropriate string.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sum of all Fears-->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#fearsModal">
+                                    <div class="card-header">
+                                        <h4>Sum of All Fears</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            A google coding interview question. Find if your K value exists. K is equal to the sum of two indexes on the array, which you provide.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Blackjack -->
+                            <div class="col-md-4">
+                                <div class="card" data-toggle="modal" data-target="#blackjackModal">
+                                    <div class="card-header">
+                                        <h4>Blackjack</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>
+                                            Play blackjack against my script. Normal blackjack rules. The deck will shuffle every game, so good luck counting cards.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Section Four : Contact -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section text-left">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 id="contact" class="title">Contact Me</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- contact form will go here once we are in the chtml document-->
+                                @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                                    <!-- Name input-->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.TextBoxFor(m => m.FromName, new { @class = "form-control", placeholder = "Your name here." })
+                                            @Html.ValidationMessageFor(m => m.FromName)
+                                        </div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control", placeholder = "Your email address" })
+                                            @Html.ValidationMessageFor(m => m.FromEmail)
+                                        </div>
+                                    </div>
+                                    <!-- subject input -->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Subject, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.TextBoxFor(m => m.Subject, new { @class = "form-control", placeholder = "Subject" })
+                                            @Html.ValidationMessageFor(m => m.Subject)
+                                        </div>
+                                    </div>
+                                    <!--  body input-->
+                                    <div class="form-group">
+                                        @Html.LabelFor(m => m.Body, new { @class = "col-md-2 control-label" })
+                                        <div class="col-md-10">
+                                            @Html.TextBoxFor(m => m.Body, new { @class = "form-control", placeholder = "Your message" })
+                                            @Html.ValidationMessageFor(m => m.FromEmail)
+                                        </div>
+                                    </div>
+                                    <!-- submit button-->
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10 text-right">
+                                            <input type="submit" class="btn btn-default" value="Send" />
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer footer-default">
+        <div class="container">
+            <!-- Social Links -->
+            <nav class="float-left">
+                <ul>
+                    <li>
+                        <a href="https://www.github.com/drrky-g">
+                            Github
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright float-right">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear())
+                </script> - Derrick Gordon
+            </div>
+        </div>
+
+        <!-- Modals -->
+        <!-- Basic Math -->
+        <div class="modal fade" id="mathModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Basic Math</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Basic Math UI -->
+                        <!--Input Row-->
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <input type="number" id="num1" class="form-control" placeholder="1" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="number" id="num2" class="form-control" placeholder="2" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="number" id="num3" class="form-control" placeholder="3" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="number" id="num4" class="form-control" placeholder="4" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input type="number" id="num5" class="form-control" placeholder="5" />
+                            </div>
+                        </div>
+
+
+                        <!-- Output Rows-->
+
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p id="smallest">
+                                    <!-- Lowest Number Here-->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p id="largest">
+                                    <!-- Lowest Number Here-->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p id="mean">
+                                    <!-- Lowest Number Here-->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p id="product">
+                                    <!-- Lowest Number Here-->
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <p id="sum">
+                                    <!-- Lowest Number Here-->
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Code display-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="code-display-math">
+                                    <pre class="brush: js">
+                                            <!--put code here-->
+                                            $("#mathbtn").click(function () {
+                                                //Step 1: Get User Data
+                                                var num1 = +$("#num1").val();
+                                                var num2 = +$("#num2").val();
+                                                var num3 = +$("#num3").val();
+                                                var num4 = +$("#num4").val();
+                                                var num5 = +$("#num5").val();
+                                                //Step 2: Manipulate data with calculations
+                                                var smallest = Math.min(num1, num2, num3, num4, num5);
+                                                var largest = Math.max(num1, num2, num3, num4, num5);
+                                                var sum = num1 + num2 + num3 + num4 + num5;
+                                                var product = num1 * num2 * num3 * num4 * num5;
+                                                var mean = sum / 5;
+                                                //Display Results
+                                                $("#smallest").text("The smallest number in the set is: " + smallest);
+                                                $("#largest").text("The largest number in the set is: " + largest);
+                                                $("#product").text("The product of the numbers is: " + product);
+                                                $("#sum").text("The sum of the numbers is: " + sum);
+                                                $("#mean").text("The average of the numbers in the set is: " + mean);
+
+                                            })
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!--Run Button-->
+                                <button class="btn btn-link btn-primary" id="mathbtn">Submit</button>
+                                <!--Code Button-->
+                                <button id="btnToggleMath" class="btn btn-link btn-success">Show Code</button>
+                                <!--Clear Button-->
+                                <button class="btn btn-link btn-danger" id="mathclear">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Factorial -->
+        <div class="modal fade" id="factModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Factorial</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Factorial UI -->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!-- Input Box-->
+                                <input id="factInput" class="form-control" type="number" placeholder="Enter a number" />
+                            </div>
+                            <div class="col-sm-6">
+                                <p id="factOutput">
+                                    <!--Factorial Output Result Shown Here-->
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Code display-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="code-display-fact">
+                                    <pre class="brush: js">
+                                            <!--put code here-->
+                                            //Listener for Button Press
+                                                $("#startFactor").click(function () {
+                                                    //Collect Data
+                                                    var factEntry = +$("#factInput").val();
+                                                    //Manipulate Data
+                                                    var factoredOutput = Factorial(factEntry);
+                                                    //Output Manipulated Data         
+                                                    $("#factOutput").text(factEntry + " has a factorial of " + factoredOutput + ".")
+                                                });
+                
+                                            //Factorial function being called by factoredOutput variable
+                                                function Factorial(num) {
+                                                    if (num > 0) {
+                                                        for (var loop = num - 1; loop > 1; loop--) {
+                                                            num *= loop;
+                                                        }
+                                                    }
+                                                    else if (num == 0) {
+                                                        num = 1;
+                                                    }
+                                                    else {
+                                                        num = "undefined";
+                                                    }
+                                                    return num;
+
+                                                }
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!--Calculate Button-->
+                                <button class="btn btn-link btn-primary" id="startFactor">Calculate</button>
+                                <!--Code Button-->
+                                <button id="btnToggleFact" class=" btn btn-link btn-success">Show Code</button>
+                                <!--Clear Button-->
+                                <button class="btn btn-link btn-danger" id="clearFactor">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Palindrome -->
+        <div class="modal fade" id="palModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Palindrome</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Palindrome UI-->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!--Input Field-->
+                                <input class="form-control" type="text" id="palIn" placeholder="Pick a word." />
+                            </div>
+                            <div class="col-sm-6">
+                                <p id="palOut"><!--Result--></p>
+                            </div>
+                        </div>
+
+
+                        <!-- Code display-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="code-display-pal">
+                                    <pre class="brush: js">
+                                            <!--put code here-->
+                                            $("#palBtn").click(function () {
+                                            //Store Input
+                                            var word = $("#palIn").val();
+                                            //Break word into an array of characters
+                                            var wordBreak = word.split('')
+                                            //Flip array
+                                            var flippedArray = wordBreak.reverse();
+                                            //Convert array back into string
+                                            var flippedWord = flippedArray.join('');
+
+            
+
+                                            //logs for testing
+                                            console.log('storing data and running methods...')
+                                            console.log(word);
+                                            console.log(wordBreak);
+                                            console.log(flippedArray);
+                                            console.log(flippedWord);
+
+
+
+                                            if (word === flippedWord) {
+                                                $("#palOut").text('Looks like ' + word + ' is a palindrome!')
+                                            } else {
+                                                $("#palOut").text('Unfortunately that is not a palindrome.')
+                                            }
+                                        })
+                                        </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!--Run Button-->
+                                <button class="btn btn-link btn-primary" id="palBtn">Is it a Palindrome?</button>
+                                <!--Code Button-->
+                                <button id="btnTogglePal" class="btn btn-link btn-success">Show Code</button>
+                                <!--Clear Button-->
+                                <button class="btn btn-link btn-danger" id="palClear">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fizz Buzz-->
+        <div class="modal fade" id="fbModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Fizz Buzz</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Fizz Buzz UI-->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <!-- Inputs -->
+                                        <input id="fizzInput" class="form-control" type="number" placeholder="Fizz" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input id="buzzInput" class="form-control" type="number" placeholder="Buzz" />
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-6">
+                                <p id="fbOutput">
+                                    <!-- Output Here-->
+
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Code display-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="code-display-fb">
+                                    <pre class="brush: js">
+                                        $("#btnFBRun").click(function () {
+                                        //Store Inputs
+                                        var fizzNum = +$("#fizzInput").val();
+                                        var buzzNum = +$("#buzzInput").val();
+                                        var fbNum = fizzNum * buzzNum;
+                                        //Form array
+                                        var outputArray = []
+                                        //fill array 1-100
+                                        for (var i = 1; i < 101; i++) {
+                                            if (i % fbNum == 0) {
+                                            //isolate numbers divided by both
+                                            outputArray.push("<span id='fizzbuzzcolor'>FizzBuzz</span>");
+                                        } else if (i % fizzNum == 0) {
+                                            //isolate numbers divided by fizz
+                                            outputArray.push("<span id='fizzcolor'>Fizz</span>");
+                                        } else if (i % buzzNum == 0) {
+                                            //isolate numbers divided by buzz
+                                            outputArray.push("<span id='buzzcolor'>Buzz</span>");
+                                        } else outputArray.push(i);
+                                        }
+                                        //convert array into string
+                                        var fbArray = outputArray.join(' ');
+                                        //display results
+                                        $("#fbOutput").html(fbArray);
+                                            
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Buttons -->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!--Run Button-->
+                                <button class="btn btn-link btn-primary" id="btnFBRun">Submit</button>
+                                <!--Code Button-->
+                                <button id="btnToggleFB" class="btn btn-link btn-success">Show Code</button>
+                                <!--Clear Button-->
+                                <button class="btn btn-link btn-danger" id="btnFBClear">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sum of All Fears-->
+        <div class="modal fade" id="fearsModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sum of All Fears</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Sum of All Fears UI -->
+
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <input id="index0" class="form-control" type="number" placeholder="1st" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="index1" class="form-control" type="number" placeholder="2nd" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="index2" class="form-control" type="number" placeholder="3rd" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="index3" class="form-control" type="number" placeholder="4th" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="index4" class="form-control" type="number" placeholder="5th" />
+                            </div>
+                            <div class="col-sm-2">
+                                <input id="kvalue" class="form-control" type="number" placeholder="K" />
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p id="koutput">
+                                    <!-- Output here-->
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Code display-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="code-display-soaf">
+                                    <pre class="brush: js">
+                                    <!--put code here-->
+                                    $("#fearSubmit").click(function () {
+
+                                        //store inputs
+                                        var indexZero = +$("#index0").val();
+                                        var indexOne = +$("#index1").val();
+                                        var indexTwo = +$("#index2").val();
+                                        var indexThree = +$("#index3").val();
+                                        var indexFour = +$("#index4").val();
+                                        var kValue = +$("#kvalue").val();
+
+                                        console.log('Values stored.');
+                                        console.log('K is...');
+                                        console.log(kValue);
+
+                                        //push values into array
+                                        var sOAFears = [
+                                            indexZero,
+                                            indexOne,
+                                            indexTwo,
+                                            indexThree,
+                                            indexFour
+                                        ];
+            
+            
+                                        console.log('Array Built')
+                                        console.log(sOAFears);
+
+                                        for (var i = 0; i < 4; i++) {
+                                        //going through array and taking final value for comparing sums
+                                            var pulledNumber = sOAFears.pop();
+                                            console.log('The array just popped ' + pulledNumber + ' to compare.')
+                                            //remaining array values shown in console
+                                            console.log('Your remaining array values are:')
+                                            console.log(sOAFears);
+                                            //add pulled value to remaining array indexes
+                                            console.log('Adding pulled number to array:')
+                                            var modifiedArray = sOAFears.map(addPulled)
+
+                                            function addPulled(num) {
+                                                return num + pulledNumber;
+                    
+                                            }
+                
+                                            console.log(modifiedArray);
+
+                                            //find funct
+                                            function doesKExist(modifiedArray) {
+                                                return modifiedArray == kValue;
+                                            }
+
+                                            //store sum being searched in variable
+                                            var kWasFound = modifiedArray.find(doesKExist);
+                                            console.log(kWasFound);
+
+                
+                                            if (kWasFound === kValue) {
+                                                break;                    
+                                            } 
+
+                                        }
+                                        //show result in output field
+                                        if (kValue === kWasFound) {
+                                            $("#koutput").text("K Exists!")
+                                            console.log("K Exists!")
+                                            } else {
+                                            $("#koutput").text("K was not found.")
+                                            console.log("K is not found.")
+                                            }
+
+
+                                    })
+                                  </pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <!--Run Button-->
+                                <button class="btn btn-link btn-primary" id="fearSubmit">Submit</button>
+                                <!--Code Button-->
+                                <button id="btnToggleSOAF" class="btn btn-link btn-success">Show Code</button>
+                                <!--Clear Button-->
+                                <button class="btn btn-link btn-danger" id="fearClear">Clear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blackjack -->
+        <div class="modal fade" id="blackjackModal" tabindex="-1" role="dialog" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Blackjack</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="material-icons">clear</i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p id="text-area">Welcome to Blackjack</p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button type="button" id="new-game-button" class="btn btn-link btn-primary">New Game</button>
+                                <button type="button" id="hit-button" class="btn btn-link btn-success">Hit</button>
+                                <button type="button" id="stay-button" class="btn btn-danger btn-link">Stay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!------- scripts ------->
+        <!-- jQ-->
+        <script type="text/javascript" src="~/assets/js/core/jquery.min.js"></script>
+
+        <!-- popper -->
+        <script type="text/javascript" src="~/assets/js/core/popper.min.js"></script>
+        <!-- material kit -->
+        <script type="text/javascript" src="~/assets/js/core/bootstrap-material-design.min.js"></script>
+        <script type="text/javascript" src="~/assets/js/material-kit.min.js"></script>
+
+        <!-- coding challenges script-->
+        <script type="text/javascript" src="~/assets/js/codingchallenges.js"></script>
+    </footer>
+</body>
+
+</html>
